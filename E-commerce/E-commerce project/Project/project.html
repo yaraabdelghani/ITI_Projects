@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+    <title>Checkout</title>
+</head>
+
+<body>
+    
+    <div class="top-header"><!-- This Header Section -->
+        <img src="Logo.png" alt="Logo" class="Logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <i class="fas fa-search"></i> <!-- Icon for search -->
+       </div>
+    <div class="icons">
+      <a class="myaccount" href="./Login/index.html" target="_blank"> <i class="fa-solid fa-user-tie"></i> My
+          Account</a>
+      <!-- <a href="./products.html" target="_blank">Cart <i class="fa-solid fa-cart-shopping"></i></a> -->
+      <a class="navbar-brand" href="carts.html" target="_blank">
+        <span class="fa fa-shopping-cart" >
+            Cart
+            <i class="badge badge-success" id="cart"></i>
+        </span>
+      </a>
+    </div>
+    </div><!-- This is End Of Header Section -->
+
+
+    <header>
+        <h1 >Checkout</h1>
+        <h5>You are here: Home &gt; Checkout </h5>
+    </header>
+<!-- ............................................. ...................................... -->
+
+    <section class="section1">
+        <h3 class="FirstH">&nbsp;&nbsp;&nbsp;Rcturning customcr?<a href="">Click here to login</a></h3>
+        <h3>&nbsp;&nbsp;&nbsp;Have a coupon?<a href=""> Click here to enter your code</a></h3>
+        <p>if you have shoped with us before. please enter your details in the boxes<br>below. if you are a new customer
+            please proceed to the Billing & Shipping<br>section</p>
+        <input type="search" placeholder="   Your coupon code" class="search">
+        <input type="button" value="Apply" class="button">
+        <input type="text" placeholder="  User name" class="text">
+        <input type="password" placeholder="  password" class="password">
+        <input type="button" value=" Login" class="login">
+    </section>
+
+    <section class="section2">
+        <h3> Billing Address :</h3>
+        <input type="checkbox" class="checkbox"><label>&nbsp;&nbsp;&nbsp;Ship to a different Address ?</label>
+        <form>
+            <input type="text" placeholder="  Bangladesh" class="input">
+            <input type="text" placeholder="  Message" class="Message">
+            <input type="text" placeholder="  First name" class="first_n">
+            <input type="text" placeholder="  Last name" class="last_n">
+            <input type="text" placeholder="  Company" class="input">
+            <input type="text" placeholder="  Address" class="input">
+            <input type="text" placeholder="  City/Town" class="input"><br>
+            <input type="text" placeholder="  Statc/country" class="first1">
+            <input type="text" placeholder="  Phone" class="last1">
+            <input type="checkbox" class="checkbox2"><label class="label">&nbsp;&nbsp;Create an acount </label>
+        </form>
+    </section>
+    <section class="section3">
+        <h3>Cart Totals:</h3>
+        <hr class="my-line">
+        <h3>Subtotal:</h3>
+        <h4 id="number1" >$400.00</h4>
+        <h3>Shiping and Handling:</h3>
+        <h4>Free Shipping</h4>
+        <h3>Order Total:</h3>
+        <h4 id="number2" >$116.00</h4>
+        <hr class="my-line">
+        <h3 style="color: var(--button);">Total:</h3>
+        <h4 class="Total" id="Total" >$532.00</h4>
+    </section>
+    <section class="section4">
+        <input type="radio" name="radio" id="radio" accesskey="1"><label for="radio">&nbsp;&nbsp;Direct Bank Transfer</label><br>
+        <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your
+            order want't be shipped until the funds<br> have cleared in our account</p>
+        <hr class="my-line">
+        <input type="radio" name="radio" id="radio" accesskey="2"><label for="radio">&nbsp;&nbsp;Cheque Payment</label><br>
+        <hr class="my-line">
+        <input type="radio" name="radio" id="radio" accesskey="3"><label for="radio">&nbsp;&nbsp;Paypal</label><br>
+    </section>
+     <input type="button" value="proceed to check Out" class="Checkout">
+    
+<!-- ............................................. ...................................... -->
+<footer class="footer">
+    <div class="aside1 footer-content">
+        <h4>Company</h4>
+        <ul>
+            <li>About</li>
+            <li>Our Shops</li>
+            <li>News</li>
+            <li>Delivery</li>
+        </ul>
+    </div>
+    <div class="aside2 footer-content">
+        <h4>Help</h4>
+        <ul>
+            <li>Contact us</li>
+            <li>FAQ</li>
+            <li>Help</li>
+            <li>tems</li>
+        </ul>
+    </div>
+    <div class="aside3 footer-content">
+        <h4 class="aside3_h4">Get Social</h4>
+        <ul>
+            <i class="fa-brands fa-facebook" style="color: rgb(20, 20, 175);"></i>
+            <li>Facebook</li>
+            <i class="fa-brands fa-twitter" style="color: blue"></i>
+            <li>Twitter</li>
+            <i class="fa-brands fa-instagram" style="color: rgb(134, 12, 215)"></i>
+            <li>instagram</li>
+        </ul>
+    </div>
+    <div class="aside4 footer-content">
+        <h4>Contact</h4>
+        <ul>
+            <li>7/4 firc Briagde Road</li>
+            <li>Khulna.9100.Bangladesh</li>
+            <li>Phone 123-456-789</li>
+            <li>Email support@domain.com</li>
+        </ul>
+    </div>
+    <div class="last-section last-child">
+        <h5>copyright 2016 <i class="fa-regular fa-copyright"></i> All rights reserved</h5>
+        <div class="pics">
+            <img src="2.jfif" alt="">
+            <img src="1.jfif" alt="">
+            <img src="3.jfif" alt="">
+        </div>
+        <h5 class="h5">Terms&Coondition | Privacy Policy</h5>
+        
+    </div>
+</footer>
+
+   
+
+</body>
+
+</html>

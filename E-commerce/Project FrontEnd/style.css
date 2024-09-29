@@ -1,0 +1,282 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.top-header {
+    background-color: #0D47A1;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .myaccount {
+    margin-right: auto;
+}
+
+.top-header input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.top-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.top-header a:hover {
+    background-color: #003c82;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0800;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #0D47A1;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.shopbutton {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 30px;
+    background-color: #FFD54F;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.shopbutton:hover {
+    background-color: #FFC107;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.product-frame {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-frame:hover {
+    transform: translateY(-5px);
+}
+
+.product-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-frame h3 {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.product-frame p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-frame button {
+    padding: 10px 20px;
+    background-color: #FFD54F;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.product-frame button:hover {
+    background-color: #FFC107;
+}
+
+footer {
+    background-color: #000;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.shopbutton {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 30px;
+    background-color: #FFD54F;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.shopbutton:hover {
+    background-color: #FFC107;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}

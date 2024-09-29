@@ -1,0 +1,363 @@
+/* Genral Style */
+:root {
+    --main: #201E43;
+    --bgColor: #e5e5e5;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+    /*End Of Genral Style */
+
+/* Header */
+.top-header {
+    background-color: var(--main); 
+    color: #fff; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-header img{
+    width: 80px;
+}
+.top-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-bar i {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    color: var(--main);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.top-header a:hover {
+    background-color: #1a237e;
+    border-radius: 5px;
+}
+
+.fa-user, .fa-cart-shopping, .fa-search {
+    font-size: 1.2rem;
+}
+/* End Of Header */
+/*Nav Section */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0800;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: var(--main);
+}
+/* End Nav Section */
+/* Main Content */
+main{
+    background-color: var(--bgColor);
+    margin: 50px 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/* Feature Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .feature {
+    width: 200px;
+  }
+  
+  .feature i {
+    font-size: 48px; /* Size of the icon */
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #777;
+  }
+/* End of Feature Section */
+/* Swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #eee;
+  }
+  .swiper-container img{
+    width: 100%;
+    height: 100%;
+  }
+/*End Of Swiper */
+/* Second Section */
+.cat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.catigoris {
+    padding: 20px;
+    margin:  30px;
+    width: 40%;
+    position: relative;
+    /* float: left; */
+    
+}
+
+.catigoris img {
+    margin: 20px;
+}
+/* Collections */
+.colc {
+    background-color: var(--bgColor);
+    width: 100%;
+    margin-bottom: 30px;
+}
+.collection{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.collection h2{
+    font-size: 40px;
+}
+.collection img {
+    width: 300px;
+    margin: 30px;
+    height: 250px;
+}
+.collection p {
+    color: #777;
+}
+/* End Collections */
+/* test */
+.layer-content .layer-info {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    
+}
+.layer-content span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.layer-content a {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: top 0.5s, opacity 1.4s;
+    transition-delay: 0.9s;
+    
+}
+.layer-content a i {
+    line-height: 40px;    
+    color:#fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main);
+
+}
+.catigoris:hover .layer-content-title, 
+.catigoris:hover .layer-content a,
+.catigoris:hover .layer-content .category
+.catigoris:hover .layer-content button{
+    top:0;
+    opacity: 1;
+}
+.catigoris .layer-content {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.catigoris:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+.catigoris img {
+    width: 100%;
+}
+.catigoris .mg {
+    margin: 2% 5%;
+}
+.catigoris .up {
+    margin: 2% 0;
+}
+/* test */
+
+.button {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 15px;
+    background-color: var(--bgColor);
+    color: black;
+    border: 2px solid var(--button);
+    border-radius: 50px;
+}
+  
+  .button:hover {
+    background-color: var(--main);
+    color: white;
+  }
+/*End Of Second Section */
+/*End Of Main Content */
+
+/* Footer Section */
+.footer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--bgColor);
+    
+}
+.footer-content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer ul
+{
+    list-style: none;
+    color: #474743;
+}
+footer aside li
+{
+    margin-bottom: 12px;
+}
+footer .aside3 li
+{
+    position: relative;
+    top: -14px;
+    right: -19px;
+    margin-bottom: 0px;
+}
+footer .aside3 i
+{
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.aside3_h4{
+    padding-top: 30px;
+}
+.last-child
+{
+    margin-top: 35px;
+    background: var(--main);
+    height:125px;
+    width: 100%;
+}
+.last-section
+{
+    font-size: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: #b0aaaa;
+    
+    
+}
+
+
+footer h4{
+    padding-left: 32px;
+    font-size: 18px;
+}
+footer .pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer .pics img{
+
+    width: 50px;
+    height: 30px;
+    margin: 2px;
+}
+/* End Footer Section */
